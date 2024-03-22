@@ -63,7 +63,7 @@ def inference():
 
         prediction = predict(image_np)
 
-        return jsonify({"prediction": prediction})
+        return jsonify({"ans": prediction})
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
